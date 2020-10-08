@@ -1,0 +1,12 @@
+nome =  input('Insira seu nome: ')
+
+nota1 = float(input('Seu primeira nota: '))
+nota2 = float(input('Sua segunda nota: '))
+
+print(f'Olá {nome} suas notas foram:')
+print(f'{nota1} e {nota2}')
+
+soma = nota1 + nota2 
+media = soma / 2
+
+print(f'Sua média é {media}')
