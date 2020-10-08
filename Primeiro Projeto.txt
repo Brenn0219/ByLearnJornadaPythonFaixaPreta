@@ -1,0 +1,18 @@
+from time import sleep
+print('Olá me chamou Baymax sou um agente de seúde e de localização!(Fase Beta)')
+sleep(2)
+opcacao_escolha = int(input('Em que posso te ajudar ?\n[1] - Saúde\n[2] - Localização\nDigite sua opção:'))
+if opcacao_escolha == 1:
+    print('Me desculpe! Estou em fase Beta ainda, o processamento de saúde não foi adicionado ainda.')
+elif opcacao_escolha == 2:
+    localizacao = int(input('Opções de Localização:\n 1 - Pracinha\n 2 - Padaria\n 3- Supermercado\nDigite sua opção:'))
+    if localizacao == 1:
+        print('Sigua reto  e depois vire a direita e ande por 3min, você chegara ao seu destino.')
+    elif localizacao == 2:
+        print('Siga reto por 5min e chegara ao seu destino.')
+    elif localizacao == 3:
+        print('Desça a rua abaixo e vira a direita.')
+    else:
+        print('Opção Inválida.Digite novamente.')
+else:
+    print('Opção Inválida, digite novamente.')
