@@ -1,0 +1,26 @@
+import random
+numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numero_escolhido = random.choice(numeros)
+adivinhe = int(input('Tente adivinhar o número. Digite o número que ache que é: '))
+cont = 0
+if adivinhe == numero_escolhido:
+    print(f'Parabéns você acertou!!')
+    print(f'Sua potuação é 10, muito boaa!')
+else:
+    while not adivinhe == numero_escolhido:
+        cont += 1
+        pontuacao = 10 -  cont
+        print('Vish, parece que você errou\nDICA:')
+        if numero_escolhido < adivinhe:
+            print('Sua adivinhação foi alta tente novamente. ')
+        else:
+            print('Sua adivinhação foi baixa tente novamente.')
+        adivinhe = int(input('Tente adivinhar o número. Digite o número que ache que é: '))
+        if adivinhe == numero_escolhido:
+            print(f'Parabéns você acertou!!')
+            print(f'Sua potuação é {pontuacao}, pois você errou {cont} vezes.')
+            if pontuacao >= 8:
+                print('Sua pontuação está boaa!')
+            else:
+                print('É sua pontuação está razoável ')
+                
